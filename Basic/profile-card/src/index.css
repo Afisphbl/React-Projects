@@ -1,0 +1,23 @@
+:root{
+  --primary-background: #020518;
+  --primary-text: #0028ca;
+  --secondary-text: #94a3b8;
+  --tertiary-text: #e3ecff;
+  --accent-color: #6366f1;
+  --card-background: #1e293b;
+  --border-color: #334155;
+  --card-shadow: 0 10px 30px -10px rgba(0, 3, 179, 0.2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--primary-background);
+}
