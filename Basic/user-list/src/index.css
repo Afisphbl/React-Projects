@@ -1,0 +1,25 @@
+:root{
+  --primary-background-color: #030f28;
+  --secondary-background-color: #1f2d43;
+  --primary-color: #fff;
+  --secondary-color: #4000ff;
+  --tertiary-color: #4000ff;
+  --border-color: #4000ff;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-background-color);
+  padding: 2rem;
+  color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
