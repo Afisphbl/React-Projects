@@ -1,0 +1,29 @@
+footer{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.order{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn{
+    margin: 10px auto;
+    background-color: orangered;
+    color: var(--text-primary);
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: rgb(187, 50, 0);
+    color: var(--text-primary);
+}
