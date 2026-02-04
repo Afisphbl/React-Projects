@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+header p{
+    color: var(--secondary-text-color);
+}
