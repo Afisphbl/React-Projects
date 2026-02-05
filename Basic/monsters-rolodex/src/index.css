@@ -1,0 +1,19 @@
+:root {
+  --bg-primary: #01071d;
+  --bg-secondary: #151923;
+  --text-primary: #6f83ff;
+  --text-secondary: #0026ff;
+  --border-color: #0026ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
