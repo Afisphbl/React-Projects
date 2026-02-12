@@ -1,0 +1,65 @@
+.profile-preview {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-preview__header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.profile-preview__name {
+  margin: 0;
+  font-size: 26px;
+}
+
+.profile-preview__title {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.profile-preview__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.profile-preview__section h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.profile-preview__summary {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.profile-preview__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.profile-preview__skill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e8f0ff;
+  color: #2357c6;
+  border: 1px solid #c4d6ff;
+  font-size: 13px;
+}
+
+.profile-preview__placeholder {
+  color: var(--muted);
+  font-size: 14px;
+}
