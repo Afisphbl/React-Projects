@@ -1,0 +1,17 @@
+.app__body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 64px);
+  gap: var(--space-3);
+  padding: 0 var(--space-3) var(--space-3);
+}
+
+@media (max-width: 960px) {
+  .app__body {
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 64px);
+    overflow: visible;
+  }
+}
