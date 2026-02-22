@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# 🎲 Random User Card — React API Practice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean and modern React app that fetches random user profiles from an external API and displays them in a beautiful profile card UI with skeleton loading and refresh functionality.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Features
 
-### `npm start`
+- Fetch random user data from API
+- Display dynamic profile cards
+- Skeleton loader while fetching
+- Refresh user button
+- Error handling
+- Clean UI & component structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 What I Learned
 
-### `npm test`
+- Fetching data using `fetch` API in React
+- Managing loading, error, and success states
+- Creating reusable **custom hooks**
+- Conditional rendering patterns
+- Skeleton loader UI techniques
+- Clean component architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React (Create React App)
+- JavaScript (ES6+)
+- CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔗 API Used
 
-### `npm run eject`
+https://randomuser.me/api/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🏗 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 🎲 Random User Card — React API Practice
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A clean and modern React app that fetches random user profiles from an external API and displays them in a beautiful profile card UI with skeleton loading and refresh functionality.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Live Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Fetch random user data from API
+- Display dynamic profile cards
+- Skeleton loader while fetching
+- Refresh user button
+- Error handling
+- Clean UI & component structure
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧠 What I Learned
 
-### Analyzing the Bundle Size
+- Fetching data using `fetch` API in React
+- Managing loading, error, and success states
+- Creating reusable **custom hooks**
+- Conditional rendering patterns
+- Skeleton loader UI techniques
+- Clean component architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🛠 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React (Create React App)
+- JavaScript (ES6+)
+- CSS
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔗 API Used
 
-### Deployment
+https://randomuser.me/api/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🏗 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+├─ components/
+│ ├─ Button.jsx
+│ ├─ UserCard.jsx
+│ └─ SkeletonLoader.jsx
+│
+├─ hooks/
+│ └─ useDataFetch.js
+│
+├─ App.jsx
+└─ index.js
+
+---
+
+## ⚙️ Setup & Run Locally
+
+git clone https://github.com/your-username/random-user-card.git
+cd random-user-card
+npm install
+npm start
+
+✨ Preview
+
+Click Refresh User to generate a new random profile with smooth skeleton loading animation.
+
+👤 Author
+
+Afis (Your Real Name Here)
+Frontend Developer — React • Hooks • API • UI
+
+🔗 GitHub: https://github.com/afisphbl
+
+📌 Notes
+
+This project was built as a React learning exercise focused on:
+
+API fetching • UI state handling • Custom hooks • Component structure
