@@ -1,0 +1,61 @@
+.skeleton-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.skeleton-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.skeleton-info {
+  width: 100%;
+}
+
+.skeleton-name {
+  width: 200px;
+  height: 28px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin: 0 auto 2rem;
+}
+
+.skeleton-detail {
+  width: 80%;
+  height: 16px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin: 0 auto 1.2rem;
+}
+
+.pulse {
+  animation: pulse-animation 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse-animation {
+  0% {
+    opacity: 0.6;
+    background-color: #d1d5db;
+  }
+  50% {
+    opacity: 1;
+    background-color: #f3f4f6;
+  }
+  100% {
+    opacity: 0.6;
+    background-color: #d1d5db;
+  }
+}
