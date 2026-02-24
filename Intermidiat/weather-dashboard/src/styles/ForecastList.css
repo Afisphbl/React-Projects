@@ -1,0 +1,88 @@
+.forecast-container {
+  margin-top: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.forecast-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--bg-color);
+  min-width: 100px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  flex: 1;
+}
+
+.forecast-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.forecast-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.forecast-date strong {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.forecast-icon img {
+  width: 60px;
+  height: 60px;
+  margin: 0.5rem 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.forecast-temp {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+/* Custom scrollbar for horizontal scrolling on smaller screens */
+.forecast-list::-webkit-scrollbar {
+  height: 6px;
+}
+.forecast-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.forecast-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .forecast-list {
+    justify-content: flex-start;
+  }
+}
