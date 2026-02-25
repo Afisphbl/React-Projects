@@ -1,45 +1,48 @@
+import { useWeatherData } from "../context/WeatherContext";
 import "../styles/WeatherCard.css";
 
-function WeatherCard({ weatherData }) {
+function WeatherCard() {
+  const { weather } = useWeatherData();
   return (
     <section className="weather-card">
-      <WeatherHeader />
+      <WeatherHeader city={weather.city} description={weather.desc} />
       <WeatherMain />
     </section>
   );
 }
 
-function WeatherHeader() {
+function WeatherHeader({ city, description }) {
   return (
     <div className="weather-header">
-      <h2>London</h2>
-      <p className="weather-description">Overcast Clouds</p>
+      <h2>{city}</h2>
+      <p className="weather-description">{description}</p>
     </div>
   );
 }
 
 function WeatherMain() {
+  const { weather } = useWeatherData();
   return (
     <>
       <div className="weather-main">
         <div className="weather-temp">
-          <h1>14°C</h1>
+          <h1>{weather.temp}°C</h1>
         </div>
         <div className="weather-icon-large">
-          <img src="cloud.png" alt="img" />
+          <img src={weather.icon} alt="Weather icon" />
         </div>
       </div>
-      <WeatherDetails />
+      <WeatherDetails weather={weather} />
     </>
   );
 }
 
-function WeatherDetails() {
+function WeatherDetails({ weather }) {
   return (
     <div className="weather-details">
-      <DetailItem label="Humidity" value="65%" />
-      <DetailItem label="Wind Speed" value="3.2 m/s" />
-      <DetailItem label="Feels Like" value="12°C" />
+      <DetailItem label="Humidity" value={`${weather.humidity}%`} />
+      <DetailItem label="Wind Speed" value={`${weather.wind_speed} m/s`} />
+      <DetailItem label="Feels Like" value={`${weather.feel__like}°C`} />
     </div>
   );
 }
